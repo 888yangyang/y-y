@@ -1,6 +1,6 @@
 # 依赖与构建产物
 node_modules/
-dist/
+# dist 需提交：GitHub Pages 从 main 分支的 /dist 部署
 
 # 日志
 dev.log
