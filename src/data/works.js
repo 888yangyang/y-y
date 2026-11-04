@@ -1,0 +1,106 @@
+// 严料坊身材书账号精选作品数据
+// 点赞数、发布时间以公开渠道核实为准；videoUrl 为抖音视频链接
+export const account = {
+  name: '严料坊身材书',
+  douyinId: 'yanjunwine',
+  certified: '南京严料坊文化传播有限公司',
+  followers: '88.1万',
+  totalLikes: '1071.3万',
+  works: '9862',
+  avgLikes: '1087',
+  region: '江苏',
+  profileUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+  desc: '你的每日自我管理动力 · 严Sir｜隔壁大叔的身材书（讲清楚，不折腾）· 严料坊创始人｜20年身材管理',
+}
+
+// 爆款视频完整收录：破万赞为主，另含高赞代表作品
+export const works = [
+  {
+    id: 'w1',
+    title: '减肥的朋友看过来 能帮一个是一个',
+    category: '情感共鸣 / 减肥',
+    likes: 72302,
+    likesText: '7.2万',
+    publishDate: '2024-05',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7371444428398988596',
+    desc: '「减肥嘴馋的时候，每天看一遍」——把减肥动机做成反复可看的自我提醒内容，成为账号爆款代表作。',
+  },
+  {
+    id: 'w2',
+    title: '用自信的高配得感，交换好运气',
+    category: '情感共鸣 / 自我管理',
+    likes: 53000,
+    likesText: '5.3万',
+    publishDate: '置顶作品',
+    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    desc: '账号置顶爆款，以「高配得感」切入中年女性的自我认可与状态管理，强情绪共鸣带动高互动。',
+  },
+  {
+    id: 'w3',
+    title: '到了一定年纪，饭是要少吃的，铁是不能不撸的',
+    category: '健身 / 力量训练',
+    likes: 30000,
+    likesText: '3.0万',
+    publishDate: '置顶作品',
+    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    desc: '以「少吃饭、多撸铁」的金句切入中年人力量训练，账号置顶代表作之一。',
+  },
+  {
+    id: 'w4',
+    title: '一定要明白，你很值得。',
+    category: '情感共鸣 / 女性成长',
+    likes: 29000,
+    likesText: '2.9万',
+    publishDate: '置顶作品',
+    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    desc: '账号置顶爆款，极简金句式内容，主打「自我价值感」共鸣，数据长期坚挺。',
+  },
+  {
+    id: 'w5',
+    title: '其实送自己最好的礼物，就是中年不发福',
+    category: '健康 / 身材管理',
+    likes: 6662,
+    likesText: '6662',
+    publishDate: '2026-03',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7619266527712533686',
+    desc: '借孙燕姿、张惠妹的发福对比引出「中年不发福」议题，引发大量评论互动。',
+  },
+  {
+    id: 'w6',
+    title: '收花、收礼物，是向外求；收腹、收核心，才是向内求',
+    category: '情感共鸣 / 身材管理',
+    likes: 5637,
+    likesText: '5637',
+    publishDate: '2026-09',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7682375044056071659',
+    desc: '金句式向内求表达，把「收腹收核心」与情绪价值绑定，评论区共鸣强烈。',
+  },
+  {
+    id: 'w7',
+    title: '中年人的博弈，最终比的就是精气神',
+    category: '情感共鸣 / 精力管理',
+    likes: 5438,
+    likesText: '5438',
+    publishDate: '2023-03',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7206220978601381123',
+    desc: '早期代表作，以「精气神」五招切入中年人精力管理，奠定账号内容调性。',
+  },
+  {
+    id: 'w8',
+    title: '低成本的长期坚持，就能换来身材颜值的稳步提升',
+    category: '自律 / 身材管理',
+    likes: 5030,
+    likesText: '5030',
+    publishDate: '2023-08',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7268683699695242496',
+    desc: '账号早期稳定输出型内容，主题聚焦「低成本长期主义」，互动稳定。',
+  },
+]
+
+// 账号「数据亮点」用于 About / Hero 展示
+export const projectData = [
+  { label: '在岗期间代表作品最高赞', value: '7.2万', note: '单条爆款' },
+  { label: '账号累计获赞', value: '1071万+', note: '全网' },
+  { label: '账号粉丝规模', value: '88.1万', note: '持续增长' },
+  { label: '账号累计作品', value: '9862+', note: '高频更新' },
+]
