@@ -14,7 +14,7 @@ export default function About() {
           {/* 完整竖版全身照，按 2:3 原比例完整呈现，不裁切 */}
           <div className="about-portrait reveal">
             <div className="frame parallax-wrap">
-              <img className="parallax-media" src="/photo.jpg" alt="杨洋" />
+              <img className="parallax-media" src={`${import.meta.env.BASE_URL}photo.jpg`} alt="杨洋" />
             </div>
             <div className="about-badge">
               <div className="t">4年+</div>

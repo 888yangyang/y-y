@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-bg">
-        <img src="/photo.jpg" alt="杨洋" />
+        <img src={`${import.meta.env.BASE_URL}photo.jpg`} alt="杨洋" />
         <div className="hero-veil" />
       </div>
       <ParticleCanvas />

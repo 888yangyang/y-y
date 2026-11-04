@@ -1,5 +1,6 @@
 // 严料坊身材书账号精选作品数据
 // 点赞数、发布时间以公开渠道核实为准；videoUrl 为抖音视频链接
+// videoFile 为本地内嵌播放视频（public/videos/ 下），由页面内 <video> 直接播放
 export const account = {
   name: '严料坊身材书',
   douyinId: 'yanjunwine',
@@ -23,6 +24,7 @@ export const works = [
     likesText: '7.2万',
     publishDate: '2024-05',
     videoUrl: 'https://www.iesdouyin.com/share/video/7371444428398988596',
+    videoFile: 'videos/w1.mp4',
     desc: '「减肥嘴馋的时候，每天看一遍」——把减肥动机做成反复可看的自我提醒内容，成为账号爆款代表作。',
   },
   {
@@ -32,7 +34,8 @@ export const works = [
     likes: 53000,
     likesText: '5.3万',
     publishDate: '置顶作品',
-    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7487553130805153083',
+    videoFile: 'videos/w2.mp4',
     desc: '账号置顶爆款，以「高配得感」切入中年女性的自我认可与状态管理，强情绪共鸣带动高互动。',
   },
   {
@@ -42,7 +45,8 @@ export const works = [
     likes: 30000,
     likesText: '3.0万',
     publishDate: '置顶作品',
-    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7537266463222009107',
+    videoFile: 'videos/w3.mp4',
     desc: '以「少吃饭、多撸铁」的金句切入中年人力量训练，账号置顶代表作之一。',
   },
   {
@@ -52,7 +56,8 @@ export const works = [
     likes: 29000,
     likesText: '2.9万',
     publishDate: '置顶作品',
-    videoUrl: 'https://www.douyin.com/user/MS4wLjABAAAA0PiZzg49_gQP0wbxPvsjdYCAA7ZuYj4zeEwSR8NJ_Bx3-pN0sun3b0aphbq3NbB-',
+    videoUrl: 'https://www.iesdouyin.com/share/video/7483846669847514395',
+    videoFile: 'videos/w4.mp4',
     desc: '账号置顶爆款，极简金句式内容，主打「自我价值感」共鸣，数据长期坚挺。',
   },
   {
@@ -63,6 +68,7 @@ export const works = [
     likesText: '6662',
     publishDate: '2026-03',
     videoUrl: 'https://www.iesdouyin.com/share/video/7619266527712533686',
+    videoFile: 'videos/w5.mp4',
     desc: '借孙燕姿、张惠妹的发福对比引出「中年不发福」议题，引发大量评论互动。',
   },
   {
@@ -73,6 +79,7 @@ export const works = [
     likesText: '5637',
     publishDate: '2026-09',
     videoUrl: 'https://www.iesdouyin.com/share/video/7682375044056071659',
+    videoFile: 'videos/w6.mp4',
     desc: '金句式向内求表达，把「收腹收核心」与情绪价值绑定，评论区共鸣强烈。',
   },
   {
@@ -83,6 +90,7 @@ export const works = [
     likesText: '5438',
     publishDate: '2023-03',
     videoUrl: 'https://www.iesdouyin.com/share/video/7206220978601381123',
+    videoFile: 'videos/w7.mp4',
     desc: '早期代表作，以「精气神」五招切入中年人精力管理，奠定账号内容调性。',
   },
   {
@@ -93,6 +101,7 @@ export const works = [
     likesText: '5030',
     publishDate: '2023-08',
     videoUrl: 'https://www.iesdouyin.com/share/video/7268683699695242496',
+    videoFile: 'videos/w8.mp4',
     desc: '账号早期稳定输出型内容，主题聚焦「低成本长期主义」，互动稳定。',
   },
 ]

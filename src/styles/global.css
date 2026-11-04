@@ -279,6 +279,46 @@ section { position: relative; }
 .work-card:hover .play { opacity: 1; }
 .work-card .play svg { width: 22px; height: 22px; fill: var(--cream); margin-left: 3px; }
 
+/* ============ 页内视频播放弹窗（16:9 完整画面，不跳转） ============ */
+.video-modal {
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(6, 4, 5, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(14px, 3vw, 44px);
+  animation: modalIn 0.4s var(--ease-power3);
+}
+@keyframes modalIn { from { opacity: 0; } to { opacity: 1; } }
+.video-modal-inner { position: relative; width: min(1200px, 100%); }
+.video-modal-head { margin-bottom: 16px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; }
+.video-modal-head h3 { font-family: 'Playfair Display', 'Noto Serif SC', serif; font-size: clamp(18px, 2.4vw, 26px); font-weight: 600; color: var(--cream); }
+.video-modal-meta { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--gold); letter-spacing: 0.06em; }
+.video-modal-meta svg { width: 14px; height: 14px; fill: currentColor; }
+.video-modal-close {
+  position: absolute; top: -48px; right: 0; z-index: 5;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.06); color: var(--cream);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s var(--ease-power3);
+}
+.video-modal-close svg { width: 20px; height: 20px; }
+.video-modal-close:hover { background: var(--wine); color: var(--cream); transform: rotate(90deg); }
+/* 16:9 画幅播放器：竖屏原视频完整居中显示（不裁切） */
+.video-frame {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--line);
+}
+.video-frame video {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  background: #000;
+  display: block;
+}
+
 /* ============ Strengths 个人优势 ============ */
 .strengths-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 40px); }
 .strength-card { position: relative; border: 1px solid var(--line); border-radius: 6px; padding: 38px 30px; background: linear-gradient(180deg, rgba(122,31,43,0.1), rgba(11,8,10,0.15)); overflow: hidden; transition: transform 0.5s var(--ease-power3), border-color 0.4s ease; }
