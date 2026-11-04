@@ -350,6 +350,23 @@ section { position: relative; }
 .contact-foot span { color: var(--gold); }
 
 /* ============ 响应式 / 移动端降级 ============ */
+/* 桌面矮窗口（宽屏 + 高度不足）：首屏垂直紧凑，数据区底部居中、隐藏右侧标语，避免大标题与数据重叠。
+   仅命中 min-width:901 且 max-height:720；不影响手机版（<768px 宽度断点）与正常高度桌面。 */
+@media (min-width: 901px) and (max-height: 720px) {
+  .hero { padding-top: 96px; align-items: flex-start; }
+  .hero-kicker { margin-bottom: 14px; }
+  .hero-title .line { font-size: clamp(26px, 3.6vw, 42px); }
+  .hero-sub { display: none; }
+  .hero-side { bottom: 24px; }
+  .hero-left { left: 50%; transform: translateX(-50%); align-items: center; text-align: center; animation: none; opacity: 1; }
+  .hero-data { flex-wrap: wrap; justify-content: center; gap: 8px 22px; }
+  .hero-data .num { font-size: clamp(16px, 2vw, 24px); }
+  .hero-data .lab { font-size: 9.5px; }
+  .hero-cta { padding: 9px 22px; font-size: 12px; }
+  .hero-right { display: none; }
+  .hero-scroll { bottom: 10px; }
+}
+
 /* 中等/窄屏：首屏数据区移到底部居中，隐藏右侧标语，避免与中央大标题重叠 */
 @media (max-width: 900px) {
   .hero-left { position: absolute; bottom: 92px; left: 50%; transform: translateX(-50%); align-items: center; text-align: center; animation: none; opacity: 1; }
